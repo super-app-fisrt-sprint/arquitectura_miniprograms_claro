@@ -1,0 +1,8 @@
+<view class="container">
+  <input class="input" placeholder="Nombre de usuario" onInput="onUsernameInput" />
+  <input class="input" type="text" placeholder="Nombre" onInput="onNameInput" />
+  <input class="input" type="text" placeholder="Apellidos" onInput="onLastNameInput" />
+  <input class="input" type="password" placeholder="Contraseña" onInput="onPasswordInput" />
+  <view class="button" onTap="signUp">Registrarse</view>
+  <view class="text">Versión {{version}}</view>
+</view>

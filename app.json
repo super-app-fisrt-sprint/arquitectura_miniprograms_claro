@@ -1,0 +1,10 @@
+{
+  "subPackageBuildType": "shared",
+  "pages": [
+    "main/ui/signUp/signUp",
+    "main/ui/pageCompuesto/pageCompuesto"
+  ],
+  "window": {
+    "defaultTitle": "Arquitectura de Mini Programas"
+  }
+}
