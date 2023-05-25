@@ -6,5 +6,6 @@ module.exports = class Keys {
 
 const TYPE = {
   APP_INFO: "APP",
-  USER: "REGISTERED_USER"
+  USER: "REGISTERED_USER",
+  LOGIN:"LOGIN_USER"
 };

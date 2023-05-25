@@ -1,3 +1,4 @@
-<view>
-  New Page
+<view class="container">
+  <text class="text-title">Bienvenido!!!</text>
+  <image mode="scaleToFill" src="https://media.giphy.com/media/ASd0Ukj0y3qMM/giphy.gif" />
 </view>

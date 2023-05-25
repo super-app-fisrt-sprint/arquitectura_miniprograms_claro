@@ -16,4 +16,12 @@ module.exports = class UserDataSourceLocal {
   createUser(user){
     return userLocal.createUser(key.TYPE.USER,user);
   }
+
+  queryCredentials(username, password) { 
+    return userLocal.queryCredentials(key.TYPE.USER,username,password)
+  }
+
+  loginUser(login) { 
+    return userLocal.loginUser(key.TYPE.LOGIN,login)
+  }
 } 

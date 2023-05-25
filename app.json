@@ -1,6 +1,7 @@
 {
   "subPackageBuildType": "shared",
   "pages": [
+    "main/ui/loginPage/loginPage",
     "main/ui/signUp/signUp",
     "main/ui/pageCompuesto/pageCompuesto"
   ],

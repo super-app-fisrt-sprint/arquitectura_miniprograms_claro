@@ -1,0 +1,6 @@
+<view class="container">
+  <input class="input" placeholder="Nombre de usuario" onInput="onUsernameInput" />
+  <input class="input" password placeholder="Contraseña" onInput="onPasswordInput" />
+  <view class="button" onTap="login">Iniciar Sesión</view>
+  <view class="text">Versión {{version}}</view>
+</view>

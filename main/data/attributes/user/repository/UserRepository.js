@@ -1,15 +1,15 @@
-const UserDataSourceLocal = require('../dataSource/UserDataSourceLocal');
-const UserDataSourceRemote = require('../dataSource/UserDataSourceRemote');
+const UserDataSourceLocal = require("../dataSource/UserDataSourceLocal");
+const UserDataSourceRemote = require("../dataSource/UserDataSourceRemote");
 const userDatasourceLocal = new UserDataSourceLocal();
 const userDatasourceRemote = new UserDataSourceRemote();
 
 module.exports = class UserRepository {
   static instance;
-  constructor () {
+  constructor() {
     if (UserRepository.instance) {
-      return UserRepository.instance
+      return UserRepository.instance;
     } else {
-        UserRepository.instance = this
+      UserRepository.instance = this;
     }
   }
   createUserLocal(user) {
@@ -24,4 +24,13 @@ module.exports = class UserRepository {
   loginUserRemote(login) {
     return userDatasourceRemote.loginUser(login);
   }
-} 
+  
+//Funciones para login
+  queryCredentialsUserLocal(username, password) {
+    return userDatasourceLocal.queryCredentials(username, password);
+  }
+
+  loginUserLocal(login) {
+    return userDatasourceLocal.loginUser(login);
+  }
+};

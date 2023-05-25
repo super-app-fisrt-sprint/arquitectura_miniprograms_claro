@@ -45,6 +45,9 @@ Page({
           title: "Registro exitoso",
           content: "Sus datos fueron almacenados correctamente"
         });
+         my.navigateTo({
+           url: "../loginPage/loginPage"
+         });
       } else {
         my.alert({
           title: "Registro Fallido",
