@@ -18,7 +18,7 @@ Page({
   },
   //Funcion para logearse de manera local
   login() {
-    //Verifique en local si exsite el user
+    //Verifique en local si existe el user
     if (this.data.username === "" && this.data.password === "") {
       my.alert({
         title: "Datos incorrectos",

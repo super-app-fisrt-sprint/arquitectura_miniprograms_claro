@@ -35,24 +35,21 @@ function signUp(username, name, lastname, password) {
   return response;
 }
 
+
 function login(username, password) {
   const userRepository = new UserRepository();
-  let queryCredentialsUser = userRepository.queryCredentialsUserLocal(
+  const queryCredentialsUser = userRepository.queryCredentialsUserLocal(
     username,
     password
   );
-  let response = "";
-  switch (queryCredentialsUser) {
-    case "Credenciales validas":
-      if (userRepository.loginUserLocal(loginUser(username, password))) {
-        response = true;
-      }
-      break;
-    case "Credenciales incorrectas":
-      response = false;
-      break;
-    default:
-      response = false;
+  let response = false;
+  if (queryCredentialsUser === "Credenciales validas") {
+    if (userRepository.loginUserLocal(loginUser(username, password))) {
+      response = true;
+    }
+    debugger;
+  } else {
+    response = false;
   }
   return response;
 }
