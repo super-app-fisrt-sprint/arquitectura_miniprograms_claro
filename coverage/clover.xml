@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1685127675951" clover="3.2.0">
-  <project timestamp="1685127675951" name="All files">
+<coverage generated="1685129912842" clover="3.2.0">
+  <project timestamp="1685129912842" name="All files">
     <metrics statements="40" coveredstatements="34" conditionals="15" coveredconditionals="8" methods="6" coveredmethods="6" elements="61" coveredelements="48" complexity="0" loc="40" ncloc="40" packages="1" files="2" classes="2"/>
     <file name="userViewModel.js" path="C:\Users\ELKIN\Desktop\arquitectura\main\domain\userViewModel.js">
       <metrics statements="30" coveredstatements="26" conditionals="11" coveredconditionals="7" methods="4" coveredmethods="4"/>
