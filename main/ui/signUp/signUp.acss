@@ -1,9 +1,11 @@
+
+
 .container {
   padding: 20rpx;
 }
 
 .input {
-  width: 100%;
+  width: 93%;
   height: 80rpx;
   margin-bottom: 20rpx;
   border: 1rpx solid #ccc;
